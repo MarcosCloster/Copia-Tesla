@@ -1,5 +1,5 @@
-<header class="fixed flex justify-between bg-transparent w-full h-auto py-4 px-12 transition-colors duration-300 ease-in-out"
-    [ngClass]="{'text-black bg-white ': isHover, 'bg-transparent text-white' : !isHover}">
+<header class=" fixed flex justify-between bg-transparent w-full h-auto py-4 px-12"
+    [ngClass]="{'text-black bg-white animate__animated animate__fadeIn': isHover, 'bg-transparent text-white' : !isHover}" style="animation-duration: 0.4s;">
     <div class="flex flex-grow basis-0">
         <svg class="h-5 w-28" viewBox="0 0 342 35"
             xmlns="http://www.w3.org/2000/svg">
@@ -12,48 +12,54 @@
         <ul class="flex  [&>li]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:rounded-md text-sm font-semibold">
             <li class="listaMenu relative group">
                 <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300 ">Vehiculos</a>
-                <div (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="fixed hidden -z-50 left-0 w-full group-hover:flex flex-col bg-white shadow-lg">
-                    <div class="flex flex-col p-4">
+                <div (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="animate__animated animate__slideInDown fixed hidden -z-50 left-0 w-full group-hover:flex flex-wrap bg-white" style="animation-duration: 0.4s;">
+                    <div class="animate__animated animate__fadeIn flex flex-col p-4" style="animation-delay: 0.1s; animation-duration: 0.5s;">
                         <img class="w-32 h-auto mb-2" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png" alt="">
                         <p>Model S</p>
                         <a href="">Mas info</a>
                     </div>
-                    <div class="flex flex-col p-4">
+                    <div class="animate__animated animate__fadeIn flex flex-col p-4" style="animation-delay: 0.2s; animation-duration: 0.5s;">
                         <img class="w-32 h-auto mb-2" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png" alt="">
                         <p>Model S</p>
                         <a href="">Mas info</a>
                     </div>
-                    <div>
-
+                    <div class="animate__animated animate__fadeIn flex flex-col p-4" style="animation-delay: 0.3s; animation-duration: 0.5s;">
+                        <img class="w-32 h-auto mb-2" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png" alt="">
+                        <p>Model S</p>
+                        <a href="">Mas info</a>
                     </div>
-                    <div>
-
+                    <div class="animate__animated animate__fadeIn flex flex-col p-4" style="animation-delay: 0.4s; animation-duration: 0.5s;">
+                        <img class="w-32 h-auto mb-2" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png" alt="">
+                        <p>Model S</p>
+                        <a href="">Mas info</a>
                     </div>
-                    <div>
-
+                    <div class="animate__animated animate__fadeIn flex flex-col p-4" style="animation-delay: 0.5s; animation-duration: 0.5s;">
+                        <img class="w-32 h-auto mb-2" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png" alt="">
+                        <p>Model S</p>
+                        <a href="">Mas info</a>
                     </div>
                 </div>
             </li>   
             <li>
-                <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300 transition-colors duration-300 ease-in-out">Energia</a>
+                <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300">Energia</a>
                 <div (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)">
 
                 </div>
             </li>
             <li>
-                <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300 transition-colors duration-300 ease-in-out">Carga</a>
+                <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300">Carga</a>
                 <div (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)">
 
                 </div>
             </li>
             <li>
-                <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300 transition-colors duration-300 ease-in-out">Descubrir</a>
+                <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300">Descubrir</a>
                 <div (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)">
 
                 </div>
             </li>
             <li>
-                <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300 transition-colors duration-300 ease-in-out">We, Robot</a>
+                <a href="" (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)" class="hover:bg-gray-300">We, Robot</a>
                 <div (mouseenter)="cambiarColores($event)" (mouseleave)="resetearColor($event)">
                     
                 </div>
